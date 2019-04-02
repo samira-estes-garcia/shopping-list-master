@@ -47,8 +47,8 @@ function checkItems()
     $('body').on('click', '.shopping-item-toggle', (event) => {
         console.log("check");
         //add class and remove class with toggle shopping-item__checked
-        $(event.target).parent().parent().prev().toggleClass('shopping-item__checked');
-    })
+        $(event.currentTarget).parent().prev().toggleClass('shopping-item__checked');
+    });
 
 }
 
